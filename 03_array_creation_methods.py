@@ -16,8 +16,16 @@ print ((range(12)))
 print (iter(range(12)))
 print (np.fromiter(iter(range(12)), dtype = float))
 
-# np.random.seed(100) need meaning of this
 print (np.random.rand(3,2))
+
+print (np.random.rand(4))
+print (np.random.rand(4))
+
+np.random.seed(0)
+print (np.random.rand(4))
+
+np.random.seed(0)
+print (np.random.rand(4))
 
 print (np.random.randn(3,2))
 
@@ -25,9 +33,10 @@ print (10 + 2*np.random.randn(3,2)) # normal distribution with mean 10 and sd 2
 
 print (np.random.randint(1,20,7)) # low=-30, high=30, size=(5,6)
 
-print (np.random.normal(loc=5, scale=2.5, size=20)) # normal distribution of 20 elements with mean 5 and sd 2.5 
+print (np.random.normal(loc=5, scale=2.5, size=10)) # normal distribution of 10 elements with mean 5 and sd 2.5 
 
-#Which of the following numpy method is used to simulate a binomial distribution? np. random. binomial(n, p, size) 
+print (np.random.binomial(n=5,p=0.5,size=10)) # (n, p, size) 
+
 l1 = [1,2,3,4]
 print (np.array(l1, dtype = np.dtype([('id', 'i1'), ('name', 'S20')])))
 

@@ -1,14 +1,9 @@
 import numpy as np 
 
 a1 = np.array([[-2,4],[2,5]])
-
 print (np.power(a1,3))
 print (np.square(a1))
 print (np.sin(a1))
-
-print (np.amin(a1)) #amax
-print (np.amin(a1,1)) 
-print (np.amin(a1,0)) 
 print (np.ptp(a1))
 print (np.percentile(a1,40,1))
 print (np.isfinite(a1))

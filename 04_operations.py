@@ -21,9 +21,15 @@ print (a1.sum(0))
 print (a1.sum(axis=1))
 print (a1.mean(1))
 print (np.mean(a1)) # median,average,var,std
-print (a1.argmax(1)) # doubt
 
 i = a1.sum(1)
 print (i < 4)
 print(a1[i < 4])
+
+print (a1.argmax(1)) #argmin    
+print (np.amax(a1)) #amin
+print (np.amax(a1,1)) #amin
+print (np.amax(a1,0)) #amin
+
+
 
